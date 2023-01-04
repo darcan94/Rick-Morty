@@ -1,0 +1,35 @@
+:root{
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+
+  --main-color: #FFFFFF;
+  --card: var(--main-color);
+  --title: #666666;
+  --subtitle: #9E9E9E;
+
+  --hover-color: #FF9800;  
+  --status-active: #55CB44;
+  --status-inactive: #D53C2E;
+  --status-unknow: #F5F5F5;
+
+  --container-shadow: 9px 17px 45px -29px
+  rgba(0, 0, 0, 0.5);
+}
+
+body.dark{
+  --main-color: #24282F;
+  --card: #3C3E44;
+  --title: #EEEEEE;
+  --subtitle: #9E9E9E;
+  --container-shadow: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
