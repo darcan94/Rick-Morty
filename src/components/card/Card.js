@@ -26,6 +26,25 @@ class Card extends LitElement{
     }
 
     static style = css`
+    :host{
+        width: 100%;
+        max-width: 300px;
+        height: 100%;
+        box-shadow: var(--container-shadow);  
+        background-color: var(--card);  
+        border-radius: .5rem;
+      }
+
+      ::slotted(img){
+          border-radius: .5rem .5rem 0 0;
+          width: 100%;
+          height: auto;
+      }
+
+      div{
+        padding: 1rem 1rem 0 1rem;
+        color: var(--title);
+      }
     `;
 }
 
