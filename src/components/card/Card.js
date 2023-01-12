@@ -7,6 +7,7 @@ class Card extends LitElement{
                 <div>
                     <slot name="image"></slot>
                 </div>
+                ${ this.infoTemplate }
             </section>
         `;
     }

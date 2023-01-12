@@ -5,7 +5,6 @@ import { html } from "lit";
 
 export const showCharacters = async () => {
     const {results} = await getCharacters();
-
     return html`${results.map( character => html`       
             <app-card>
                 <img slot="image" loading="lazy" width="640" height="300" src="${character.image}" alt="${character.name}" />
